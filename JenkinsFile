@@ -4,7 +4,8 @@ pipeline {
         stage('Static Analysis') {
             steps {
                 echo 'Run the static analysis to the code'
-                  sh "./gradlew assembleDebug"
+//                   sh "./gradlew assembleDebug"
+                        sh "fastlane deploy"
             }
         }
 
